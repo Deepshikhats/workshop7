@@ -591,7 +591,7 @@ footer{
             margin-top: 26px;
         }
         .logo{
-            margin-left: 9vw;
+            margin-left: 19vw;
         }
     }
     #header__links{
@@ -603,7 +603,7 @@ footer{
         z-index: 2;
         padding: 5px 5px 5px 12px;
         border-radius: 5px;
-        left: -20vw;
+        left: -62vw;
     }
     .Create_Your_Account{
         padding-left: 10px !important;
@@ -708,7 +708,14 @@ footer{
         right: 24px;
     }
 }
-@media (min-width:382px) and (max-width:573px){
-    
+@media (max-width:485px){
+    #header__links{
+        left:-73vw;
+    }
+}
+@media (max-width:485px){
+    #header__links{
+        left:-310px;
+    }
 }
     

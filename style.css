@@ -799,7 +799,7 @@ footer .footer_content .social a img {
     margin-top: 26px;
   }
   .header .logo {
-    margin-left: 9vw;
+    margin-left: 19vw;
   }
   #header__links {
     display: none !important;
@@ -813,7 +813,7 @@ footer .footer_content .social a img {
     z-index: 2;
     padding: 5px 5px 5px 12px;
     border-radius: 5px;
-    left: -20vw;
+    left: -62vw;
   }
   .Create_Your_Account {
     padding-left: 10px !important;
@@ -937,6 +937,18 @@ footer .footer_content .social a img {
   #search {
     top: 151px;
     right: 24px;
+  }
+}
+
+@media (max-width: 485px) {
+  #header__links {
+    left: -73vw;
+  }
+}
+
+@media (max-width: 485px) {
+  #header__links {
+    left: -310px;
   }
 }
 /*# sourceMappingURL=style.css.map */
