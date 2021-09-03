@@ -910,4 +910,12 @@ footer .footer_content .social a img {
     position: static;
   }
 }
+
+@media (max-width: 641px) {
+  .container3_button {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 /*# sourceMappingURL=style.css.map */
