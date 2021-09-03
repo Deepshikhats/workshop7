@@ -47,8 +47,8 @@ button:hover{
                 font-size: 10px;
                 color: white;
                 position: absolute;
-                right: 1px;
-                bottom: 15px;
+                top: -13px;
+                left: 0;
             }    
         }
     }
@@ -590,6 +590,9 @@ footer{
             display: block;
             margin-top: 26px;
         }
+        .logo{
+            margin-left: 9vw;
+        }
     }
     #header__links{
         display: none !important;
@@ -601,11 +604,6 @@ footer{
         padding: 5px 5px 5px 12px;
         border-radius: 5px;
         left: -20vw;
-    }
-    .logo{
-        position: absolute;
-        left: 30%;
-        top: -7px;
     }
     .Create_Your_Account{
         padding-left: 10px !important;
@@ -644,9 +642,6 @@ footer{
     
 }
 @media (max-width:573px){
-    .logo{
-        left: 23%;
-    }
     .section1__content{
         height: 156px !important;
     }
@@ -688,5 +683,32 @@ footer{
     .container3_button{
         justify-content: space-between;
     }
+}
+@media   (max-width:381px){
+    .logo{
+        margin-left: 0;
+    }
+    .section1__content{
+        top: 73px !important;
+    }
+    .section1_property-details::before{
+        left: 0px !important;
+    }
+    #property_type{
+        position: absolute;
+        top: 55px;
+        right: 7px;
+    }
+    #budget{
+        top:101px !important;
+        right: 7px;
+    }
+    #search{
+        top: 151px;
+        right: 24px;
+    }
+}
+@media (min-width:382px) and (max-width:573px){
+    
 }
     
