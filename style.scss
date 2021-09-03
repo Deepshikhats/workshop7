@@ -686,7 +686,10 @@ footer{
 }
 @media   (max-width:381px){
     .logo{
-        margin-left: 0;
+        margin-left: 0 !important;
+    }
+    #header__links{
+        left:-250px;
     }
     .section1__content{
         top: 73px !important;
@@ -711,11 +714,6 @@ footer{
 @media (max-width:485px){
     #header__links{
         left:-73vw;
-    }
-}
-@media (max-width:485px){
-    #header__links{
-        left:-310px;
     }
 }
     
