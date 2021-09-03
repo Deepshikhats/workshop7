@@ -340,6 +340,7 @@ button:hover {
   position: absolute;
   top: 154px;
   right: 38px;
+  cursor: pointer;
 }
 
 .card .card_body {
