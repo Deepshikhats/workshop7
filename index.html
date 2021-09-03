@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROPERTY OK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+   <header class="header">
+     <nav class="nav_bar">
+      <span class="material-icons menu_icon" onclick="toggle_menu()">menu</span>
+      <img src="Assets/logo 1.png" alt="logo" class="logo">
+      <div id="header__links">
+        <a href="#" class="header__links--items"><span class="material-icons">home</span></a>
+        <a href="#" class="header__links--items">Home Loan</a>    
+        <a href="#" class="header__links--items">Login</a>
+      </div>
+      <form action="#"></form>
+          <a href="#" class="Create_Your_Account"><span>Create Your Account</span></a>
+      </form>
+     </nav>
+   </header>
+   <section class="section1">
+       <img class="section1_bg" src="Assets/Rectangle_406.png" alt="">
+       <div class="section1__content">
+        <h2 class="section1__h2">Amet Consectetur Adipisicing</h2>
+        <h1 class="section1__title">Find Your <span>Perfect Properties</span></h1>
+        <div class="section1_property-details">
+            <form>
+                <input type="text" id="location" placeholder="Add more">
+                <select id="property_type" >
+                    <option value="#">property Type</option>
+                    <option value="residential">Residential House</option>
+                 </select>
+                 <select name="" id="budget">
+                     <option value="#">Budget</option>
+                 </select>
+                 <button type="submit" id="search">SEARCH</button>
+            </form>
+        </div>
+       </div>
+   </section>
+   <main>
+       <div class="container main_content">
+           <h1 class="content_title"><span>Premium Projects</span></h1>
+           <h2>We have a huge number of properties for you to look over</h2>
+       </div>
+       <div>
+           <div class="row row_padding">
+               <div class="col-sm">
+                <div class="card mb-3">
+                    <img src="Assets/House1.jpg" class="card-image" alt="house1">
+                    <img src="Assets/sale.png" class="img_top" alt="">
+                    <img src="Assets/Frame_13.png" class="img_top2" alt="">
+                    <img src="Assets/fav_circle.png" class="fav_circle" alt="">
+                    <img id="fav_img1"  class="fav_img" src="Assets/love_grey.png" onclick="changeImage(this.id)" alt="">
+                    <div class="card_body">
+                      <h5 class="card_title">2100 SqFt Residential House</h5>
+                      <p class="card_text"><span>By</span> Gaurs Group</p>
+                      <p class="card_location"><span class="material-icons">place</span>Yamuna Expressway, Greater Noida</p>
+                      <div class="card_footer">
+                          <h6 class="card_price">₹ 30.9 Lac</h6>
+                          <button class="card_button" type="menu">View Detals</button>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+               <div class="col-sm">
+                <div class="card mb-3">
+                    <img src="Assets/house2.png" class="card-image" alt="house2">
+                    <img src="Assets/rent.png" class="img_top" alt="">
+                    <img src="Assets/Frame_13.png" class="img_top2" alt="">
+                    <img src="Assets/fav_circle.png" class="fav_circle" alt="">
+                    <img id="fav_img2"  class="fav_img" src="Assets/love_grey.png" onclick="changeImage(this.id)" alt="">
+                    <div class="card_body">
+                      <h5 class="card_title">2400 SqFt Residential House</h5>
+                      <p class="card_text"><span>By</span> Gaurs Group</p>
+                      <p class="card_location"><span class="material-icons">place</span>Thiruvananthapuram, Kerala</p>
+                      <div class="card_footer">
+                          <h6 class="card_price">₹ 2 Lac</h6>
+                          <button class="card_button" type="menu">View Detals</button>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+               <div class="col-sm">
+                <div class="card mb-3">
+                    <img src="Assets/house9.png" class="card-image" alt="house9">
+                    <img src="Assets/rent.png" class="img_top" alt="">
+                    <img src="Assets/Frame_13.png" class="img_top2" alt="">
+                    <img src="Assets/fav_circle.png" class="fav_circle" alt="">
+                    <img id="fav_img3" class="fav_img" src="Assets/love_grey.png" onclick="changeImage(this.id)" alt="">
+                    <div class="card_body">
+                      <h5 class="card_title">2400 SqFt Residential House</h5>
+                      <p class="card_text"><span>By</span> Gaurs Group</p>
+                      <p class="card_location"><span class="material-icons">place</span>Thiruvananthapuram, Kerala</p>
+                      <div class="card_footer">
+                          <h6 class="card_price">₹ 2 Lac</h6>
+                          <button class="card_button" type="menu">View Detals</button>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+               <div class="col-sm">
+                <div class="card mb-3">
+                    <img src="Assets/house10.png" class="card-image" alt="house4">
+                    <img src="Assets/sale.png" class="img_top" alt="">
+                    <img src="Assets/Frame_13.png" class="img_top2" alt="">
+                    <img src="Assets/fav_circle.png" class="fav_circle" alt="">
+                    <img id="fav_img4" class="fav_img"  src="Assets/love_grey.png" onclick="changeImage(this.id)" alt="">
+                    <div class="card_body">
+                      <h5 class="card_title">2100 SqFt Residential House</h5>
+                      <p class="card_text"><span>By</span> Gaurs Group</p>
+                      <p class="card_location"><span class="material-icons">place</span>Yamuna Expressway, Greater Noida</p>
+                      <div class="card_footer">
+                          <h6 class="card_price">₹ 30.9 Lac</h6>
+                          <button class="card_button" type="menu">View Detals</button>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+               <div class="col-sm">
+                <div class="card mb-3">
+                    <img src="Assets/house11.png" class="card-image" alt="house5">
+                    <img src="Assets/sale.png" class="img_top" alt="">
+                    <img src="Assets/Frame_13.png" class="img_top2" alt="">
+                    <img src="Assets/fav_circle.png" class="fav_circle" alt="">
+                    <img id="fav_img5" class="fav_img" src="Assets/love_grey.png" onclick="changeImage(this.id)" alt="">
+                    <div class="card_body">
+                      <h5 class="card_title">2400 SqFt Residential House</h5>
+                      <p class="card_text"><span>By</span> Gaurs Group</p>
+                      <p class="card_location"><span class="material-icons">place</span>Yamuna Expressway, Greater Noida</p>
+                      <div class="card_footer">
+                          <h6 class="card_price">₹ 30.9 Lac</h6>
+                          <button class="card_button" type="menu">View Detals</button>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+               <div class="col-sm">
+                <div class="card">
+                    <img src="Assets/house12.png" class="card-image" alt="house6">
+                    <img src="Assets/sale.png" class="img_top" alt="">
+                    <img src="Assets/Frame_13.png" class="img_top2" alt="">
+                    <img src="Assets/fav_circle.png" class="fav_circle" alt="">
+                    <img id="fav_img6" class="fav_img" src="Assets/love_grey.png" onclick="changeImage(this.id)" alt="">
+                    <div class="card_body">
+                      <h5 class="card_title">2400 SqFt Residential House</h5>
+                      <p class="card_text"><span>By</span> Gaurs Group</p>
+                      <p class="card_location"><span class="material-icons">place</span>Yamuna Expressway, Greater Noida</p>
+                      <div class="card_footer">
+                          <h6 class="card_price">₹ 30.9 Lac</h6>
+                          <button class="card_button" type="menu">View Detals</button>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+           </div>
+           <button class="button--load_more" type="menu">Load More</button>
+       </div>
+       <div class="container main_content" id="content2">
+        <h1 class="content_title"><span>Latest Projects</span></h1>
+        <h2>We have a huge number of properties for you to look over</h2>
+    </div>
+    <div>
+        <div class="row row_padding">
+            <div class="col-sm">
+             <div class="card mb-3">
+                 <img src="Assets/house7.png" class="card-image" alt="house7">
+                 <img src="Assets/sale.png" class="img_top" alt="">
+                 <img src="Assets/fav_circle.png" class="fav_circle" alt="">
+                 <img id="fav_img7" class="fav_img" src="Assets/love_grey.png" onclick="changeImage(this.id)" alt="">
+                 <div class="card_body">
+                   <h5 class="card_title">2100 SqFt Residential House</h5>
+                   <p class="card_text"><span>By</span> Gaurs Group</p>
+                   <p class="card_location"><span class="material-icons">place</span>Yamuna Expressway, Greater Noida</p>
+                   <div class="card_footer">
+                       <h6 class="card_price">₹ 30.9 Lac</h6>
+                       <button class="card_button" type="menu">View Detals</button>
+                   </div>
+                 </div>
+               </div>
+            </div>
+            <div class="col-md">
+             <div class="card mb-3">
+                 <img src="Assets/house2.png" class="card-image" alt="house8">
+                 <img src="Assets/rent.png" class="img_top" alt="">
+                 <img src="Assets/Frame_13.png" class="img_top2" alt="">
+                 <img src="Assets/fav_circle.png" class="fav_circle" alt="">
+                 <img id="fav_img8" class="fav_img" src="Assets/love_grey.png" onclick="changeImage(this.id)" alt="">
+                 <div class="card_body">
+                   <h5 class="card_title">2400 SqFt Residential House</h5>
+                   <p class="card_text"><span>By</span> Gaurs Group</p>
+                   <p class="card_location"><span class="material-icons">place</span>Thiruvananthapuram, Kerala</p>
+                   <div class="card_footer">
+                       <h6 class="card_price">₹ 2 Lac</h6>
+                       <button class="card_button" type="menu">View Detals</button>
+                   </div>
+                 </div>
+               </div>
+            </div>
+            <div class="col-sm">
+             <div class="card mb-3">
+                 <img src="Assets/house3.png" class="card-image" alt="house9">
+                 <img src="Assets/rent.png" class="img_top" alt="">
+                 <img src="Assets/fav_circle.png" class="fav_circle" alt="">
+                 <img id="fav_img9" class="fav_img" src="Assets/love_grey.png" onclick="changeImage(this.id)" alt="">
+                 <div class="card_body">
+                   <h5 class="card_title">2400 SqFt Residential House</h5>
+                   <p class="card_text"><span>By</span> Gaurs Group</p>
+                   <p class="card_location"><span class="material-icons">place</span>Thiruvananthapuram, Kerala</p>
+                   <div class="card_footer">
+                       <h6 class="card_price">₹ 2 Lac</h6>
+                       <button class="card_button" type="menu">View Detals</button>
+                   </div>
+                 </div>
+               </div>
+            </div>
+            <div class="col-sm">
+             <div class="card mb-3">
+                 <img src="Assets/house4.png" class="card-image" alt="house10">
+                 <img src="Assets/sale.png" class="img_top" alt="">
+                 <img src="Assets/fav_circle.png" class="fav_circle" alt="">
+                 <img id="fav_img10" class="fav_img" src="Assets/love_grey.png" onclick="changeImage(this.id)" alt="">
+                 <div class="card_body">
+                   <h5 class="card_title">2100 SqFt Residential House</h5>
+                   <p class="card_text"><span>By</span> Gaurs Group</p>
+                   <p class="card_location"><span class="material-icons">place</span>Yamuna Expressway, Greater Noida</p>
+                   <div class="card_footer">
+                       <h6 class="card_price">₹ 30.9 Lac</h6>
+                       <button class="card_button" type="menu">View Detals</button>
+                   </div>
+                 </div>
+               </div>
+            </div>
+            <div class="col-sm">
+             <div class="card mb-3">
+                 <img src="Assets/house5.png" class="card-image" alt="house11">
+                 <img src="Assets/sale.png" class="img_top" alt="">
+                 <img src="Assets/fav_circle.png" class="fav_circle" alt="">
+                 <img id="fav_img11" class="fav_img" src="Assets/love_grey.png" onclick="changeImage(this.id)" alt="">
+                 <div class="card_body">
+                   <h5 class="card_title">2400 SqFt Residential House</h5>
+                   <p class="card_text"><span>By</span> Gaurs Group</p>
+                   <p class="card_location"><span class="material-icons">place</span>Yamuna Expressway, Greater Noida</p>
+                   <div class="card_footer">
+                       <h6 class="card_price">₹ 30.9 Lac</h6>
+                       <button class="card_button" type="menu">View Detals</button>
+                   </div>
+                 </div>
+               </div>
+            </div>
+            <div class="col-sm">
+             <div class="card">
+                 <img src="Assets/house6.png" class="card-image" alt="house12">
+                 <img src="Assets/sale.png" class="img_top" alt="">
+                 <img src="Assets/Frame_13.png" class="img_top2" alt="">
+                 <img src="Assets/fav_circle.png" class="fav_circle" alt="">
+                 <img id="fav_img12" class="fav_img" src="Assets/love_grey.png" onclick="changeImage(this.id)" alt="">
+                 <div class="card_body">
+                   <h5 class="card_title">2400 SqFt Residential House</h5>
+                   <p class="card_text"><span>By</span> Gaurs Group</p>
+                   <p class="card_location"><span class="material-icons">place</span>Yamuna Expressway, Greater Noida</p>
+                   <div class="card_footer">
+                       <h6 class="card_price">₹ 30.9 Lac</h6>
+                       <button class="card_button" type="menu">View Detals</button>
+                   </div>
+                 </div>
+               </div>
+            </div>
+        </div>
+        <button class="button--load_more" type="menu">Load More</button>
+    </div>
+    <div class="p-5 mt-5 container3">
+        <div class="container3_content">
+            <h1 class="container3_title">Browse Residential Projects in Top 8 Cities</h1>
+            <p class="container3_text">Sed quis porta quam. Nam arcu dolor, fermentum ac gravida quis, ultricies auctor nisl. Cras ex tortor, aliquam a magna in, congue tempor purus. Pellentesque nec magna dui. </p>  
+        </div>
+        <div class="container3_button">
+            <button type="button" class="button" onclick="showhidelist()">Bangalore</button>
+            <button type="button" class="button">Pune</button>
+            <button type="button" class="button">Mumbai</button>
+            <button type="button" class="button">Hyderabad</button>
+            <button type="button" class="button">Chennai</button>
+            <button type="button" class="button">Kolkata</button>
+            <button type="button" class="button">Navi Mumbai</button>
+            <button type="button" class="button">Thane</button>
+        </div>
+        <div id="button_click_description">
+          <ul class="list">
+            <li>Godrej Reserve</li>
+            <li>Sumadhura Silver Ripples</li>
+          </ul>
+          <ul class="list">
+            <li>Sumadhura Shikharam</li>
+            <li>Sonestaa iWoods</li>
+          </ul>
+          <ul class="list">
+            <li>Janaadhar Shubha</li>
+            <li>Godrej Eternity</li>
+          </ul>
+          <ul class="list">
+            <li>Metropolis Fair Oaks</li>
+            <li>Shriram Blue</li>
+          </ul>
+        </div>
+    </div>
+   </main>
+   <section class="container4">
+     <div class="container4_section1">
+      <h1 class="container4_section1_title">Subscribe For Special Offers & Promotions</h1>
+      <P class="container4_section1_text">Sed quis porta quam. Nam arcu dolor, fermentum ac gravida quis, ultricies auctor nisl. Cras ex tortor, aliquam a magna in, congue tempor purus. Pellentesque nec magna dui. Aenean vulputate felis at dolor elementum convallis. Vestibulum ante ipsum primis in faucibus.</P>
+      <form action="#">
+        <input class="container4_section1_email" type="email" placeholder="Email Address">
+      </form>
+      <button type="submit">Subscribe Now</button>
+     </div>
+     <div id="container4_div">
+       <div class="container4_section2">
+         <address class="address">
+           <div class="mb-4 address_1">
+            <h1 class="mb-4" >Let’s Talk!</h1>
+            <a href="tel:916000760005">+91 60 00 76 0005</a><br>
+            <a href="mailto:info@propertyok.com">info@propertyok.com</a>
+           </div>
+           <div class="address_2">
+            PropertyOK,<br>
+            Kuranganoor Road, Marappalam Rd,
+            Pattom, Thiruvananthapuram, Kerala<br>
+            Pin : 695004
+           </div>
+         </address>
+         <div class="info">
+          <div class=" mb-4 about">
+            <h3><a onclick="dispay()" id="about_us">About Us</a></h3>
+            <h3><a id="legal"></a></h3>
+            <h3><a href="">Privacy Policy</a></h3>
+          </div>
+          <div class="">
+            <h3><a>Terms of use</a></h3>
+            <h3><a>Contact Us</a></h3>
+          </div>
+         </div>
+        </div>
+     </div>
+   </section>
+   <footer>
+     <div class="footer_content">
+      <div class="social">
+        <a href="">
+          <img src="Assets/fb.png" alt="">
+        </a>
+        <a href="">
+          <img src="Assets/twitter.png" alt="">
+        </a>
+        <a href="">
+          <img src="Assets/linkedin-16.png" alt="">
+        </a>
+        <a href="">
+          <img src="Assets/inst.png" alt="">
+        </a>
+      </div>
+      <div class="Copyright">
+        <small>© Copyright PropertyOK - All Rights Reserved.</small>
+        <small>Powered by neoito.com</small>
+      </div>
+     </div>
+    
+
+   </footer>
+    <script src="javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
