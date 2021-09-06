@@ -114,7 +114,7 @@ button:hover{
         color: white;
         margin: 0;
         span{
-            color: rgb(216, 179, 13);
+            color: #ffa828;
         }
     }
     .section1_property-details{
@@ -153,15 +153,18 @@ button:hover{
     #location{
         @include content_property();
         @include body_font();
+        
     }
     #property_type{
         @include content_property();
         @include body_font();
+        padding-left: 18px;
         
     }
     #budget{
         @include content_property();
         @include body_font();
+        padding-left: 18px;
     }
     #search{
         @include body_font();
