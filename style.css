@@ -288,7 +288,7 @@ button:hover {
   display: block;
   width: 16px;
   height: 3px;
-  top: 34px;
+  bottom: 0px;
   left: 54%;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
@@ -302,6 +302,7 @@ button:hover {
   width: 16px;
   height: 3px;
   left: 46%;
+  bottom: 0px;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
 }
