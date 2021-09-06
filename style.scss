@@ -7,7 +7,7 @@ body{
 
 @mixin body_font {
     font-family: 'Nunito', sans-serif;
-    font-weight:600;
+    font-weight:400;
     font-style: normal; 
     color: #626262; 
 }
@@ -25,18 +25,24 @@ button:hover{
     .nav_bar{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         position: relative;
         .logo{
             padding: 4px;
             transform: scale(.8);
+            margin-left: -11px
+        }
+        #home_icon{
+            font-size: 15px !important;
         }
         .Create_Your_Account{
             @include body_font();
-            padding-top: 25px;
-            padding-left: 12px;
+            padding-top: 34px;
+            padding-left: 33px;
+            padding-bottom: 26px;
             padding-right: 2vw;
             background-color:#626262;
-            font-size: 15px;
+            font-size: 12px;
             color: white !important;
             span{
                 position: relative;
@@ -53,18 +59,18 @@ button:hover{
         }
     }
     #header__links{
-        position: absolute;
-        right: 18%;
-        bottom: 17px;
+        position:absolute;
+        top: 30px;
+        right:179px;
         a{
             color: #626262; 
-            padding-right: 30px;
+            padding-right: 21px;
         }
         display: flex;
         justify-content: space-between;
         .header__links--items{
             @include body_font();
-            font-size: 14px;
+            font-size: 11px;
         }
         
     }
@@ -72,50 +78,39 @@ button:hover{
 }
 
 .section1{
-    background-image: url('Assets/Rectangle.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Assets/Rectangle.jpg');
     background-repeat:no-repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
+    // -webkit-background-size:cover;
     background-size:cover;
-    background-position:center;
-    position: relative;
-    &_bg{
-        height: 400px;
-        width: 100%;
-        // left: 0px;
-        // right: 0px;
-        //top: 96px;
-        border-radius: 0px;
-        opacity: 60%;
-    }
-    .section1__content{
+    height: 319px;
+    &__content{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         height: 209px;
-        position: absolute;
+        position: relative;
         width: 100%;
-        top: 92px;
-    }
+        top: 70px;
+    }      
     &__h2{
         position: relative;
         @include body_font();
         font-weight: 400;
-        font-size: 16px;
+        font-size: 12px;
         line-height: 16px;
         color: #F3F3F3;
-        letter-spacing: -0.5px;
+        bottom: 24px;
+        left: 7px;
         margin: 0%;
     }
     &__title{
         position: relative;
-        bottom: 39px;
+        bottom: 44px;
+        left: 8px;
         @include body_font();  
-        font-size: 36px;
-        line-height: 36px;
-        letter-spacing: -0.5px;
+        font-size: 29px;
+        line-height: 29px;
         color: white;
         margin: 0;
         span{
@@ -126,17 +121,19 @@ button:hover{
         display: flex;
         justify-content: space-evenly;
         width: auto;
+        position: relative;
+        bottom: 3px;
+        left: 5px;
         padding: 8px;
         border-radius: 4px;
         background-color: white;
-        position: relative;
         &::before{
             content: "Buy your Perfect Properties";
             position: absolute;
             bottom: 58px;
             left: 0;
             @include body_font();
-            font-size: 16px;
+            font-size: 14px;
             color: white;
             letter-spacing: -.5px;
         }
@@ -148,46 +145,41 @@ button:hover{
         border-radius: 2px;
         text-align: center;
         margin-right: 5px;
-
+        font-weight: 400;
+        font-size: 11px;
+        width: 175px;
 
     }
     #location{
         @include content_property();
         @include body_font();
-        font-weight: 400;
-        font-size: 12px;
-        width: 175px;
     }
     #property_type{
         @include content_property();
         @include body_font();
-        font-weight: 400;
-        font-size: 12px;
-        width: 175px;
+        
     }
     #budget{
         @include content_property();
         @include body_font();
-        font-weight: 400;
-        font-size: 12px;
-        width: 175px;
     }
     #search{
         @include body_font();
         @include content_property();
         color: white;
-        font-size: 12px;
         background: #E53935;
-        width: 146px;
+        width: 112px;
+        height: 38px;
         
     }
 }
 .main_content{
     margin-top: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
     .content_title{
         @include body_font();
-        font-size: 32px;
+        font-size: 26px;
+        font-weight: 600;
         letter-spacing: -0.5px;
         text-align: center;
         color:#3A3939;
@@ -202,8 +194,10 @@ button:hover{
             display: block;
             width: 16px;
             height: 3px;
-            top:41px;
+            top:34px;
             left: 54%;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
         }
         span::after{
             position: absolute;
@@ -212,41 +206,44 @@ button:hover{
             display: block;
             width: 16px;
             height: 3px;
-            left:48%;
+            left:46%;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
         }
         
         
     }
     h2{
         @include body_font();
-        font-size: 20px;
+        font-size: 16px;
         text-align: center;
         margin-top: 22px;
+        font-weight: 600;
     }
 }
 @mixin card_title_font {
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 17px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     //line-height: 20px;
-    letter-spacing: 0px;
+    letter-spacing: -.5px;
     text-align: left;
     color: #3A3939;
 }
 @mixin card_text_font {
     font-family: Nunito;
-    font-size: 18px;
+    font-size: 15px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
+    font-weight: 600;
+    line-height: 11px;
     letter-spacing: -0.5px;
     text-align: left;
-    color: #3A3939;  
+    color: #3A3939;
 }
 @mixin card_location_font {
     font-family: Nunito;
-    font-size: 16px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
@@ -254,35 +251,44 @@ button:hover{
     text-align: left;
     color:#626262;
 }
-.row_padding{
-    padding-left: 7vw;
-    --bs-gutter-x: -0.7rem !important;
+.main_container{
+    margin-left: 5vw;
+    margin-right: 4vw;
 }
 .card{
-    padding: 8px;
-    width: 20rem;
+    padding: 12px;
     position: relative;
+    border-radius: 12px;
+    border: .1px solid rgba(147,140,140,.13);
+    &:hover{
+        box-shadow: 0px 0px 8px rgba(58, 57, 57, 0.24);
+    }
+    .card_images{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
     .img_top{
         position: absolute;
-        right: 17px;
-        top: 3px;
-        transform: scale(.7);
+        right: 7px;
+        top: -2px;
+        transform: scale(.9);
     }
     .img_top2{
         position: absolute;
         right: 78px;
-        transform: scale(.7);
-        top: 3px;
+        transform: scale(.9);
+        top: -2px;
     }
     .fav_circle{
         position: absolute;
-        top: 145px;
-        right: 31px;
+        bottom: 10px;
+        right: 14px;
     }
     .fav_img{
         position: absolute;
-        top: 154px;
-        right: 38px;
+        bottom: 15px;
+        right: 21px;
         cursor: pointer;
     }
     .card_body{
@@ -293,7 +299,7 @@ button:hover{
         }
         .card_text{
             @include card_text_font();
-            margin: 5px;
+            margin: 5px 5px 5px 0px;
             span{
                 color:#626262;
             }
@@ -304,9 +310,9 @@ button:hover{
             left: 17px;
             span{
                 position: absolute;
-                left: -18px;
-                // top: -4px;
-                font-size: 19px !important;
+                left: -20px;
+                top: 2px;
+                font-size: 17px !important;
             }
         }
         .card_footer{
@@ -315,19 +321,22 @@ button:hover{
             align-items: center;
             .card_price{
                 @include body_font();
-                font-size: 16px;
+                font-weight: 600;
+                font-size: 13px;
                 color: #3A3939;
             }
             .card_button{
                 background: #FCE7E7;
                 @include body_font();
                 font-family: Nunito;
-                font-size: 14px;
+                font-size: 11px;
+                font-weight: 600;
                 line-height: 14px;
                 letter-spacing: 0px;
                 color: #E53935;
                 border: none;
-                padding: 10px 18px 10px 18px;  
+                padding: 8px 12px 8px 12px;  
+                border-radius: 2px;
             }
         }
     }  
@@ -341,14 +350,20 @@ button:hover{
     border: #EB9F24 1px solid;
     padding: 9px;
     position: relative;
-    left: 46%;
-    margin-top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    padding-left: 14px;
+    padding-right: 18px;
+    border-radius: 2px;
 }
 #content2{
-    margin-top: 50px;
+    margin-top: 56px;
 }
 .container3{
+    margin-top:59px;
     background: #F8F8F8;
+    padding:56px 56px 75px 56px;
     &_button{
         display: flex;
         justify-content: center;
@@ -358,23 +373,25 @@ button:hover{
         }
         button{
             border: none;
-            margin-right: 2px !important;
-            width: 118px;
-            height: 39px;
+            margin-right: 4px !important;
+            width: 97px;
+            height: 34px;
             background: white;
-            border-bottom: #626262 3px solid;
+            border-top: #eeeeee 1px solid;
+            border-bottom: #626262 2px solid;
             font-family: Nunito;
-            font-size: 16px;
+            font-size: 13px;
             font-style: normal;
             font-weight: 400;
             line-height: 16px;
             letter-spacing: -0.5px;
             text-align: center;
-            &:hover{
-                background: #FEF5E5;
-                color: #EB9F24;
-                border-bottom:#EB9F24 3px solid ;
-            }
+            color: #626262;
+            // &:hover{
+            //     background: #FEF5E5;
+            //     color: #EB9F24;
+            //     border-bottom:#EB9F24 3px solid ;
+            // }
         }
         
     }
@@ -386,7 +403,8 @@ button:hover{
     }
     &_title{
         @include body_font();   
-        font-size: 24px;
+        font-size: 20px;
+        font-weight: 700;
         line-height: 24px;
         letter-spacing: -0.5px;
         color: #3A3939;
@@ -395,33 +413,32 @@ button:hover{
     &_text{
         @include body_font(); 
         width: 66%;    
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 24px;
+        font-size: 13px;
+        line-height: 22px;
         text-transform: capitalize;
         letter-spacing: -0.5px;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 4px;
         margin-bottom: 25px;
     }
     
 }
-#button_click_description{
+#button1_description{
     display: none;
-    justify-content: space-between;
+    justify-content: space-around;
     background: white;
     height: fit-content;
-    padding: 26px;
-    //padding-top: 20px;
+    padding: 8px 0px 0px 0px;
     .list{
         display: flex;
         flex-direction: column;
         list-style: none;
         @include body_font();
-        font-size: 15px;
+        font-size: 12px;
         line-height: 15px;
         font-weight: 400;
         overflow: auto;
+        padding-left: 0px;
         &::-webkit-scrollbar {
             display: none;
             }
@@ -438,26 +455,27 @@ button:hover{
         align-items: center;
         justify-content: center;
         position: relative;
-        padding-top: 75px;
-        padding-bottom: 60px;
+        padding-top: 56px;
+        padding-bottom: 40px;
         &_title{
             @include body_font();
             color: white;
-            font-size: 28px;
+            font-size: 23px;
             line-height: 28px;
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 16px;
         }
         &_text{
             @include body_font();
-            font-size: 16px;
-            line-height: 28px;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 23px;
             letter-spacing: -0.5px;
             text-transform: capitalize;
             color: #F3F3F3;
             text-align: center;
-            width: 66%;
-            margin-bottom: 35px;
+            width: 56%;
+            margin-bottom: 22px;
         }
         &_email{
             background:#0D1B1E ;
@@ -465,6 +483,7 @@ button:hover{
             border-bottom:#D3D3D3 1px solid;
             position: relative;
             right: 76px;
+            font-size: 13px !important;
             width: 200%;
         }
         button{
@@ -472,10 +491,11 @@ button:hover{
             background: linear-gradient(265.6deg, #ECA539 -0.34%, #CE3D37 99.66%), #FCE7E7;
             color: white;
             border-radius: 2px;
-            width: 145px;
-            height: 42px;
+            width: 118px;
+            height: 34px;
             border: none;
-            margin-top: 40px;
+            margin-top: 26px;
+            font-size: 11px !important;
         }
     }
     hr{
@@ -491,25 +511,28 @@ button:hover{
         justify-content: space-between;
         border-top: 1px solid;
         border-color: rgba(255, 255 ,255, 0.6);
-        padding-top: 45px;
-        padding-bottom: 45px;
+        padding-top: 38px;
         .address{
             display: flex;
             justify-content: space-around;
             width: 50%;
+            margin-bottom: 10px;
             .address_1{
                 width: 44%;
             }
             .address_2{
                 width:44%;
+                font-size: 12px;
+                line-height: 22px;
             }
         }
         .info{
             display: flex;
-            justify-content: space-around;
-            width: 44%;
+            justify-content: space-evenly;
+            width: 41%;
+            margin-top: -18px;
             h3{
-                margin-bottom: 25px;
+                margin-bottom: -6px;
             }
         }
         h1{
@@ -536,15 +559,17 @@ button:hover{
             font-weight: 400;
         }
         h3{
-            @include body_font();
-            font-size: 15px;
-            letter-spacing: -0.5px;
-            color: white;
-            font-weight: 400;
-            line-height: 15px;
+            a{
+                @include body_font();
+                font-size: 12px !important;
+                letter-spacing: -0.5px;
+                color: white !important;
+                font-weight: 400;
+                line-height: 15px;
+            }
             #legal{
-                color: #F9A825;
-
+                color: #F9A825 !important;
+                font-size: 12px;
             }
         }
     }
@@ -559,18 +584,21 @@ footer{
         justify-content: space-between;
         border-top: 1px solid;
         border-color: rgba(255, 255 ,255, 0.6);
+        margin-left: 1.5vw;
+        padding-top: 4px;
+        padding-bottom: 4px;
         small{         
-            font-size: 10px;
+            font-size: 11px;
             font-weight: 400;
             line-height: 12px;
-            letter-spacing: 0px;
             color: #F5F5F5;
         }
         .social{
+            margin-left: 2px;
             a{
-                margin-right: 9px;
+                margin-right: 11px;
                 img{
-                    transform: scale(.7);
+                    transform: scale(.9);
                 }
             }
         }
@@ -591,19 +619,20 @@ footer{
             margin-top: 26px;
         }
         .logo{
-            margin-left: 19vw;
+           position: relative;
+           right: -7%;
         }
     }
     #header__links{
+        width: fit-content;
         display: none !important;
         flex-direction: column !important;
         background: white;
-        position: relative !important;
-        top: 55px;
+        top: 72px !important;
         z-index: 2;
         padding: 5px 5px 5px 12px;
         border-radius: 5px;
-        left: -62vw;
+        left:1px;
     }
     .Create_Your_Account{
         padding-left: 10px !important;
@@ -614,11 +643,11 @@ footer{
 @media  (min-width:573px) and (max-width: 790px){
     .section1_property-details{
         background-color: transparent !important;
-        position: relative;
+        bottom: 51px !important;
         #search{
             position: absolute;
             top: 56px;
-            right: 203px;
+            right: 223px;
         }
     }
 
@@ -667,7 +696,7 @@ footer{
     #search{
         position: absolute;
         top:104px;
-        right: 114px;
+        right: 133px;
     }
     .footer_content{
         flex-direction: column;
@@ -684,18 +713,15 @@ footer{
         justify-content: space-between;
     }
 }
-@media   (max-width:381px){
-    .logo{
-        margin-left: 0 !important;
-    }
-    #header__links{
-        left:-250px;
-    }
+@media   (max-width:405px){
     .section1__content{
-        top: 73px !important;
+        top: 40px !important;
     }
-    .section1_property-details::before{
-        left: 0px !important;
+    .section1_property-details{
+        bottom:25px !important;
+        &::before{
+        left: 13px !important;
+        }
     }
     #property_type{
         position: absolute;
@@ -708,12 +734,8 @@ footer{
     }
     #search{
         top: 151px;
-        right: 24px;
+        right: 40px;
     }
 }
-@media (max-width:485px){
-    #header__links{
-        left:-73vw;
-    }
-}
+
     
