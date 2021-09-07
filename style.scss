@@ -29,20 +29,20 @@ button:hover{
         position: relative;
         .logo{
             padding: 4px;
-            transform: scale(.8);
-            margin-left: -11px
+            transform: scale(.9);
+            margin-left: -2px
         }
         #home_icon{
             font-size: 15px !important;
         }
         .Create_Your_Account{
             @include body_font();
-            padding-top: 34px;
-            padding-left: 33px;
-            padding-bottom: 26px;
+            padding-top: 37px;
+            padding-left: 29px;
+            padding-bottom: 27px;
             padding-right: 2vw;
             background-color:#626262;
-            font-size: 12px;
+            font-size: 14px;
             color: white !important;
             span{
                 position: relative;
@@ -50,18 +50,18 @@ button:hover{
             span::after{
                 content: "Free";
                 @include body_font();
-                font-size: 10px;
+                font-size: 8px;
                 color: white;
                 position: absolute;
-                top: -13px;
-                left: 0;
+                top: -10px;
+                right: 0;
             }    
         }
     }
     #header__links{
         position:absolute;
-        top: 30px;
-        right:179px;
+        top: 34px;
+        right:196px;
         a{
             color: #626262; 
             padding-right: 21px;
@@ -70,7 +70,7 @@ button:hover{
         justify-content: space-between;
         .header__links--items{
             @include body_font();
-            font-size: 11px;
+            font-size: 13px;
         }
         
     }
@@ -82,7 +82,7 @@ button:hover{
     background-repeat:no-repeat;
     // -webkit-background-size:cover;
     background-size:cover;
-    height: 319px;
+    height: 356px;
     &__content{
         display: flex;
         flex-direction: column;
@@ -97,19 +97,19 @@ button:hover{
         position: relative;
         @include body_font();
         font-weight: 400;
-        font-size: 12px;
+        font-size: 13px;
         line-height: 16px;
         color: #F3F3F3;
-        bottom: 24px;
+        bottom: 17px;
         left: 7px;
         margin: 0%;
     }
     &__title{
         position: relative;
-        bottom: 44px;
+        bottom: 29px;
         left: 8px;
         @include body_font();  
-        font-size: 29px;
+        font-size: 32px;
         line-height: 29px;
         color: white;
         margin: 0;
@@ -122,18 +122,18 @@ button:hover{
         justify-content: space-evenly;
         width: auto;
         position: relative;
-        bottom: 3px;
-        left: 5px;
+        bottom: -23px;
+        left: 8px;
         padding: 8px;
         border-radius: 4px;
         background-color: white;
         &::before{
             content: "Buy your Perfect Properties";
             position: absolute;
-            bottom: 58px;
+            bottom: 62px;
             left: 0;
             @include body_font();
-            font-size: 14px;
+            font-size: 15px;
             color: white;
             letter-spacing: -.5px;
         }
@@ -144,44 +144,53 @@ button:hover{
         height: 38px;
         border-radius: 2px;
         text-align: center;
-        margin-right: 5px;
         font-weight: 400;
         font-size: 11px;
-        width: 175px;
+        
 
     }
     #location{
         @include content_property();
         @include body_font();
+        width: 258px;
+        margin-right: 8px;
         
     }
     #property_type{
         @include content_property();
         @include body_font();
-        padding-left: 18px;
+        padding-left: 8px;
+        margin-right: 9px;
+        width: 156px;
         
     }
     #budget{
         @include content_property();
         @include body_font();
-        padding-left: 18px;
+        padding-left: 4px;
+        margin-right: 10px;
+        width: 156px;
     }
     #search{
         @include body_font();
         @include content_property();
         color: white;
         background: #E53935;
-        width: 112px;
+        width: 128px;
         height: 38px;
         
     }
 }
 .main_content{
-    margin-top: 50px;
-    margin-bottom: 48px;
+    margin-top: 63px;
+    margin-bottom: 50px;
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     .content_title{
         @include body_font();
-        font-size: 26px;
+        font-size: 28px;
         font-weight: 600;
         letter-spacing: -0.5px;
         text-align: center;
@@ -195,10 +204,10 @@ button:hover{
             content:" ";
             background: #E53935;
             display: block;
-            width: 16px;
+            width: 18px;
             height: 3px;
-            bottom:0px;
-            left: 53%;
+            bottom:-6px;
+            left: 54%;
             border-bottom-right-radius: 5px;
             border-top-right-radius: 5px;
         }
@@ -207,10 +216,10 @@ button:hover{
             content:" ";
             background: #5e5f5c;
             display: block;
-            width: 16px;
+            width: 18px;
             height: 3px;
             left:46%;
-            bottom: 0px;
+            bottom: -6px;
             border-bottom-left-radius: 5px;
             border-top-left-radius: 5px;
         }
@@ -219,15 +228,16 @@ button:hover{
     }
     h2{
         @include body_font();
-        font-size: 16px;
+        font-size: 18px;
         text-align: center;
-        margin-top: 22px;
+        margin-top: 29px;
         font-weight: 600;
+        // letter-spacing: -0.5px;
     }
 }
 @mixin card_title_font {
     font-family: Roboto;
-    font-size: 17px;
+    font-size: 19px;
     font-style: normal;
     font-weight: 600;
     //line-height: 20px;
@@ -237,7 +247,7 @@ button:hover{
 }
 @mixin card_text_font {
     font-family: Nunito;
-    font-size: 15px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 11px;
@@ -247,7 +257,7 @@ button:hover{
 }
 @mixin card_location_font {
     font-family: Nunito;
-    font-size: 13px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
@@ -256,11 +266,11 @@ button:hover{
     color:#626262;
 }
 .main_container{
-    margin-left: 5vw;
-    margin-right: 4vw;
+    margin-left: 5.5vw;
+    margin-right: 4.5vw;
 }
 .card{
-    padding: 12px;
+    padding: 13px 11px 13px 15px;
     position: relative;
     border-radius: 12px;
     border: .1px solid rgba(147,140,140,.13);
@@ -286,24 +296,25 @@ button:hover{
     }
     .fav_circle{
         position: absolute;
-        bottom: 10px;
-        right: 14px;
+        bottom: 11px;
+        right: 12px;
     }
     .fav_img{
         position: absolute;
-        bottom: 15px;
-        right: 21px;
+        bottom: 17px;
+        right: 19px;
         cursor: pointer;
     }
     .card_body{
         margin-top: 18px;
         .card_title{
             @include card_title_font();
-            margin-bottom: 20px
+            margin-bottom: 21px;
+            margin-top : 3px;
         }
         .card_text{
             @include card_text_font();
-            margin: 5px 5px 5px 0px;
+            margin: 5px 5px 9px 0px;
             span{
                 color:#626262;
             }
@@ -311,7 +322,7 @@ button:hover{
         .card_location{
             @include card_location_font();
             position: relative;
-            left: 17px;
+            left: 18px;
             span{
                 position: absolute;
                 left: -20px;
@@ -326,8 +337,9 @@ button:hover{
             .card_price{
                 @include body_font();
                 font-weight: 600;
-                font-size: 13px;
+                font-size: 14px;
                 color: #3A3939;
+                margin-top: 10px;
             }
             .card_button{
                 background: #FCE7E7;
@@ -339,6 +351,7 @@ button:hover{
                 letter-spacing: 0px;
                 color: #E53935;
                 border: none;
+                width: 103px;
                 padding: 8px 12px 8px 12px;  
                 border-radius: 2px;
             }
@@ -349,25 +362,26 @@ button:hover{
     @include body_font();
     background: #FEF5E5;
     color: #EB9F24;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 14px;
     border: #EB9F24 1px solid;
-    padding: 9px;
+    padding: 10px 5px 10px 7px;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 20px;
-    padding-left: 14px;
-    padding-right: 18px;
-    border-radius: 2px;
+    left: 43%;
+    width: 104px;
+    // transform: translateX(-50%);
+    margin-top: 19px;
+    padding-left: 7px;
+    padding-right: 5px;
+    border-radius: 2px;   
 }
 #content2{
-    margin-top: 56px;
+    margin-top: 64px;
 }
 .container3{
-    margin-top:59px;
+    margin-top:64px;
     background: #F8F8F8;
-    padding:56px 56px 75px 56px;
+    padding:56px 56px 73px 56px;
     &_button{
         display: flex;
         justify-content: center;
@@ -378,8 +392,8 @@ button:hover{
         button{
             border: none;
             margin-right: 4px !important;
-            width: 97px;
-            height: 34px;
+            width: 107px;
+            height: 37px;
             background: white;
             border-top: #eeeeee 1px solid;
             border-bottom: #626262 2px solid;
@@ -407,8 +421,9 @@ button:hover{
     }
     &_title{
         @include body_font();   
-        font-size: 20px;
+        font-size: 21px;
         font-weight: 700;
+        margin-top: 8px;
         line-height: 24px;
         letter-spacing: -0.5px;
         color: #3A3939;
@@ -416,14 +431,15 @@ button:hover{
     }
     &_text{
         @include body_font(); 
-        width: 66%;    
+        width: 60%;    
         font-size: 13px;
-        line-height: 22px;
+        font-weight: 600;
+        line-height: 21px;
         text-transform: capitalize;
         letter-spacing: -0.5px;
         text-align: center;
-        margin-top: 4px;
-        margin-bottom: 25px;
+        margin-top: 9px;
+        margin-bottom: 34px;
     }
     
 }
@@ -432,14 +448,14 @@ button:hover{
     justify-content: space-around;
     background: white;
     height: fit-content;
-    padding: 8px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
     .list{
         display: flex;
         flex-direction: column;
         list-style: none;
         @include body_font();
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 13px;
+        line-height: 17px;
         font-weight: 400;
         overflow: auto;
         padding-left: 0px;
@@ -459,47 +475,48 @@ button:hover{
         align-items: center;
         justify-content: center;
         position: relative;
-        padding-top: 56px;
-        padding-bottom: 40px;
+        padding-top: 61px;
+        padding-bottom: 43px;
         &_title{
             @include body_font();
             color: white;
-            font-size: 23px;
+            font-size: 25px;
             line-height: 28px;
             text-align: center;
-            margin-bottom: 16px;
+            margin-bottom: 22px;
         }
         &_text{
             @include body_font();
             font-weight: 300;
-            font-size: 13px;
-            line-height: 23px;
+            font-size: 14px;
+            line-height: 24px;
             letter-spacing: -0.5px;
             text-transform: capitalize;
             color: #F3F3F3;
             text-align: center;
-            width: 56%;
-            margin-bottom: 22px;
+            width: 55%;
+            margin-bottom: 26px;
         }
         &_email{
             background:#0D1B1E ;
             border: none;
             border-bottom:#D3D3D3 1px solid;
             position: relative;
-            right: 76px;
+            right: 99px;
             font-size: 13px !important;
-            width: 200%;
+            width: 241%;
         }
         button{
             @include body_font();
             background: linear-gradient(265.6deg, #ECA539 -0.34%, #CE3D37 99.66%), #FCE7E7;
             color: white;
             border-radius: 2px;
-            width: 118px;
-            height: 34px;
+            width: 130px;
+            height: 36px;
             border: none;
-            margin-top: 26px;
-            font-size: 11px !important;
+            margin-top: 30px;
+            font-size: 13px !important;
+            padding-left: 19px;
         }
     }
     hr{
@@ -515,14 +532,22 @@ button:hover{
         justify-content: space-between;
         border-top: 1px solid;
         border-color: rgba(255, 255 ,255, 0.6);
-        padding-top: 38px;
+        padding-top: 44px;
         .address{
             display: flex;
             justify-content: space-around;
             width: 50%;
-            margin-bottom: 10px;
+            margin-bottom: 14px;
             .address_1{
                 width: 44%;
+                h1{
+                    margin-bottom: 21px;
+                    font-size: 32px;
+                }
+                a{
+                    margin-left: 2px;
+                    font-size: 16px !important;
+                }
             }
             .address_2{
                 width:44%;
@@ -536,7 +561,13 @@ button:hover{
             width: 41%;
             margin-top: -18px;
             h3{
-                margin-bottom: -6px;
+                margin-bottom: -2px;
+            }
+            .about{
+                margin-left: 5px;
+            }
+            .terms{
+                margin-left: 14px;
             }
         }
         h1{
@@ -565,7 +596,7 @@ button:hover{
         h3{
             a{
                 @include body_font();
-                font-size: 12px !important;
+                font-size: 14px !important;
                 letter-spacing: -0.5px;
                 color: white !important;
                 font-weight: 400;
@@ -580,7 +611,7 @@ button:hover{
 }
 footer{
     background-color: #0D1B1E;
-    padding-left: 4vw;
+    padding-left: 2vw;
     padding-right: 4vw;
     padding-bottom: 4px;
     .footer_content{
@@ -645,9 +676,14 @@ footer{
     }
 }
 @media  (min-width:573px) and (max-width: 790px){
+    .section1__content{
+        top: 36px ;
+        #location{
+            width:160px;
+        }
+    }
     .section1_property-details{
         background-color: transparent !important;
-        bottom: 51px !important;
         #search{
             position: absolute;
             top: 56px;
@@ -677,6 +713,9 @@ footer{
 @media (max-width:573px){
     .section1__content{
         height: 156px !important;
+        #location{
+            width:160px;
+        }
     }
     .section1__h2{
         bottom:29px;
@@ -722,9 +761,10 @@ footer{
         top: 40px !important;
     }
     .section1_property-details{
-        bottom:25px !important;
+        top:2px !important;
         &::before{
-        left: 13px !important;
+        left: 7px !important;
+        top: -14px !important;
         }
     }
     #property_type{
